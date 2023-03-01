@@ -13,8 +13,9 @@ public class CreditCardMain {
         int cardNumber = 0;
         String expDate = null;
         boolean flag = true;
-        while(flag){
-            try{
+        CreditCard c1 = null;
+        while (flag) {
+            try {
                 logger.info("Enter card details for first person");
                 logger.info("Enter name : ");
                 name = sc.nextLine();
@@ -23,17 +24,19 @@ public class CreditCardMain {
                 sc.nextLine();
                 logger.info("Enter expiry date : ");
                 expDate = sc.nextLine();
+                c1 = new CreditCard(name, cardNumber, expDate);
                 flag = false;
-            } catch (InputMismatchException e){
+            } catch (InputMismatchException e) {
                 logger.info("Your input type is mismatched, try again.");
                 sc.nextLine();
             }
         }
 
-        CreditCard c1 = new CreditCard(name, cardNumber, expDate);
+
         flag = true;
-        while (flag){
-            try{
+        CreditCard c2 = null;
+        while (flag) {
+            try {
                 logger.info("Enter card details of second person");
                 logger.info("Enter name :");
                 name = sc.nextLine();
@@ -42,14 +45,15 @@ public class CreditCardMain {
                 sc.nextLine();
                 logger.info("Enter expiry date : ");
                 expDate = sc.nextLine();
+                c2 = new CreditCard(name, cardNumber, expDate);
                 flag = false;
-            } catch (InputMismatchException e){
+            } catch (InputMismatchException e) {
                 logger.info("Your input type is mismatched, try again.");
                 sc.nextLine();
             }
         }
 
-        CreditCard c2 = new CreditCard(name, cardNumber, expDate);
+
         logger.info("Before cloning");
         String check = "Objects c1 and c2 are both equal : " + c1.equals(c2);
         logger.info(check);
