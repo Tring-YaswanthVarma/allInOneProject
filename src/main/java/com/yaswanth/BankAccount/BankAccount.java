@@ -1,29 +1,29 @@
-package com.yaswanth;
+package com.yaswanth.BankAccount;
 
 import java.util.logging.Logger;
 
 public class BankAccount {
     Logger logger = Logger.getLogger("com.api.jar");
     private String name;
-    private double accNum;
+    private int accNum;
     private double balance;
     private String s;
 
-    public BankAccount(String name, double accNum, double balance) {
+    public BankAccount(String name, int accNum, double balance) {
         this.name = name;
         this.accNum = accNum;
         this.balance = balance;
     }
 
-    public void deposit(int money) {
+    public void deposit(double money) {
         balance += money;
         s = "Money credited to your account : " + money + ".";
         logger.info(s);
-        s = "Current Balance : " + balance + ".";
-        logger.info(s);
+//        s = "Current Balance : " + balance + ".";
+//        logger.info(s);
     }
 
-    public void withdraw(int money) {
+    public void withdraw(double money) {
         if (balance < money) {
             s = "Your balance is too low to withdraw the amount you requested.";
             logger.info(s);
@@ -33,8 +33,8 @@ public class BankAccount {
             balance -= money;
             s = "Money debited from your account : " + money + ".";
             logger.info(s);
-            s = "Current Balance : " + balance + ".";
-            logger.info(s);
+//            s = "Current Balance : " + balance + ".";
+//            logger.info(s);
         }
     }
 
