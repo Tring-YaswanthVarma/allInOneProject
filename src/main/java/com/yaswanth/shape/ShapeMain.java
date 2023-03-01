@@ -12,6 +12,7 @@ public class ShapeMain {
 
     public void shapeMain() {
         Logger logger = Logger.getLogger("com.api.jar");
+        final String ER = "Your input type is mismatched, try again.";
         String check;
         String type;
         double triangleL1 = 0;
@@ -24,7 +25,6 @@ public class ShapeMain {
         double radius = 0;
         Shape s = null;
         Scanner sc = new Scanner(System.in);
-        boolean flag = true;
         char choice = 'y';
 
         while (choice == 'y'){
@@ -38,7 +38,7 @@ public class ShapeMain {
                         radius = sc.nextDouble();
                         checker = false;
                     }catch (InputMismatchException e){
-                        logger.info("Your input type is mismatched, try again.");
+                        logger.info(ER);
                         sc.nextLine();
                     }
                 }
@@ -53,7 +53,7 @@ public class ShapeMain {
                         rectWidth = sc.nextDouble();
                         checker = false;
                     } catch (InputMismatchException e){
-                        logger.info("Your input type is mismatched, try again.");
+                        logger.info(ER);
                         sc.nextLine();
                     }
                 }
@@ -74,7 +74,7 @@ public class ShapeMain {
                         triangleBase = sc.nextDouble();
                         checker = false;
                     } catch (InputMismatchException e){
-                        logger.info("Your input type is mismatched, try again.");
+                        logger.info(ER);
                         sc.nextLine();
                     }
                 }

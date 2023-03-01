@@ -4,7 +4,7 @@ public abstract class SimpleCalculator {
     private double num1;
     private double num2;
 
-    public SimpleCalculator(double num1, double num2){
+    protected SimpleCalculator(double num1, double num2){
         this.num1 = num1;
         this.num2 = num2;
     }
