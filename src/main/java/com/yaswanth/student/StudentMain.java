@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 
 public class StudentMain {
     public void studentMain() {
+        String str;
         Scanner sc = new Scanner(System.in);
         Logger logger = Logger.getLogger("com.api.jar");
         String name;
@@ -35,7 +36,8 @@ public class StudentMain {
             int choice = sc.nextInt();
             switch (choice) {
                 case 1:
-                    logger.info(s.studentGrade());
+                    str = s.studentGrade();
+                    logger.info(str);
                     break;
                 case 2:
                     checker = true;

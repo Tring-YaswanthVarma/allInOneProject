@@ -13,14 +13,16 @@ import com.yaswanth.tictactoe.TicTacToeMain;
 
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException, IOException {
         Scanner sc = new Scanner(System.in);
+        Logger logger = Logger.getLogger("com.api.jar");
         boolean flag = true;
         while(flag){
-            System.out.println("1.Bank Account \n2. Basic Point \n3. Credit Card \n4.Frequency Of Words \n5.Shape \n6. Simple Calculator \n7. Simple Database \n8. Student Assignment \n9. Student Data Structure Assignment \n10. TicTacToe game \n11. Exit");
-            System.out.println("Choose one option: ");
+            logger.info("1.Bank Account \n2. Basic Point \n3. Credit Card \n4.Frequency Of Words \n5.Shape \n6. Simple Calculator \n7. Simple Database \n8. Student Assignment \n9. Student Data Structure Assignment \n10. TicTacToe game \n11. Exit");
+            logger.info("Choose one option: ");
             int choice = sc.nextInt();
             switch (choice){
 

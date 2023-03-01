@@ -19,8 +19,6 @@ public class BankAccount {
         balance += money;
         s = "Money credited to your account : " + money + ".";
         logger.info(s);
-//        s = "Current Balance : " + balance + ".";
-//        logger.info(s);
     }
 
     public void withdraw(double money) {
@@ -33,8 +31,6 @@ public class BankAccount {
             balance -= money;
             s = "Money debited from your account : " + money + ".";
             logger.info(s);
-//            s = "Current Balance : " + balance + ".";
-//            logger.info(s);
         }
     }
 
