@@ -1,15 +1,15 @@
 package com.yaswanth;
 
-import com.yaswanth.bankAccount.BankAccountMain;
-import com.yaswanth.basicPoint.BasicPointMain;
-import com.yaswanth.creditCard.CreditCardMain;
-import com.yaswanth.frequencyOfWords.FrequencyMain;
+import com.yaswanth.bankaccount.BankAccountMain;
+import com.yaswanth.basicpoint.BasicPointMain;
+import com.yaswanth.creditcard.CreditCardMain;
+import com.yaswanth.frequencyofwords.FrequencyMain;
 import com.yaswanth.shape.ShapeMain;
-import com.yaswanth.simpleCalculator.SimpleCalculatorMain;
-import com.yaswanth.simpleDatabase.SimpleDatabaseMain;
+import com.yaswanth.simplecalculator.SimpleCalculatorMain;
+import com.yaswanth.simpledatabase.SimpleDatabaseMain;
 import com.yaswanth.student.StudentMain;
-import com.yaswanth.studentDS.StudentTest;
-import com.yaswanth.ticTacToe.TicTacToeMain;
+import com.yaswanth.studentds.StudentTest;
+import com.yaswanth.tictactoe.TicTacToeMain;
 
 import java.io.IOException;
 import java.util.Scanner;

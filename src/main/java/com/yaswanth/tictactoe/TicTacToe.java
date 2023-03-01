@@ -1,4 +1,4 @@
-package com.yaswanth.ticTacToe;
+package com.yaswanth.tictactoe;
 
 public class TicTacToe {
     public int checkHorizontal(char[] a) {

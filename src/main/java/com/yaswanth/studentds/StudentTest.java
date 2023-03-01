@@ -1,4 +1,4 @@
-package com.yaswanth.studentDS;
+package com.yaswanth.studentds;
 
 import java.util.ArrayList;
 import java.util.List;

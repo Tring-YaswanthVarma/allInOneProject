@@ -1,4 +1,4 @@
-package com.yaswanth.ticTacToe;
+package com.yaswanth.tictactoe;
 
 
 import java.util.Scanner;

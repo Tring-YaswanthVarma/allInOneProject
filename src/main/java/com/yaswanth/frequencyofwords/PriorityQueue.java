@@ -1,4 +1,4 @@
-package com.yaswanth.frequencyOfWords;
+package com.yaswanth.frequencyofwords;
 
 import java.util.Map;
 import java.util.logging.Logger;

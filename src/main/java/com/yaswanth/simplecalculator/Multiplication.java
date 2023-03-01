@@ -1,4 +1,4 @@
-package com.yaswanth.simpleCalculator;
+package com.yaswanth.simplecalculator;
 
 public class Multiplication extends SimpleCalculator{
     public Multiplication(double num1, double num2){

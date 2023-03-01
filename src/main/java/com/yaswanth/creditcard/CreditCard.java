@@ -1,4 +1,4 @@
-package com.yaswanth.creditCard;
+package com.yaswanth.creditcard;
 
 public class CreditCard implements Cloneable{
     private final String name;

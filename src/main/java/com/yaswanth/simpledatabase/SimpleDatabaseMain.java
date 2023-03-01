@@ -1,4 +1,4 @@
-package com.yaswanth.simpleDatabase;
+package com.yaswanth.simpledatabase;
 
 
 import java.util.Scanner;

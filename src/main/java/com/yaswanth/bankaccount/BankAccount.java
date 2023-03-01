@@ -1,4 +1,4 @@
-package com.yaswanth.bankAccount;
+package com.yaswanth.bankaccount;
 
 import java.util.logging.Logger;
 

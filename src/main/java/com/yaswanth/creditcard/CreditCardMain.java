@@ -1,4 +1,4 @@
-package com.yaswanth.creditCard;
+package com.yaswanth.creditcard;
 
 
 import java.util.InputMismatchException;

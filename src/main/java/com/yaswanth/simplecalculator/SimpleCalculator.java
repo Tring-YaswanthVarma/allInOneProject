@@ -1,4 +1,4 @@
-package com.yaswanth.simpleCalculator;
+package com.yaswanth.simplecalculator;
 
 public abstract class SimpleCalculator {
     private double num1;

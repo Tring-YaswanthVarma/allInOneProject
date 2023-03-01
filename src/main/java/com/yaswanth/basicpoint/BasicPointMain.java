@@ -1,4 +1,4 @@
-package com.yaswanth.basicPoint;
+package com.yaswanth.basicpoint;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

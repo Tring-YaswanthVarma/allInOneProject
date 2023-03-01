@@ -1,4 +1,4 @@
-package com.yaswanth.basicPoint;
+package com.yaswanth.basicpoint;
 
 public class BasicPoint implements Cloneable{
     private final double x;

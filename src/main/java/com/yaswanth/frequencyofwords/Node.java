@@ -1,4 +1,4 @@
-package com.yaswanth.frequencyOfWords;
+package com.yaswanth.frequencyofwords;
 
 public class Node {
     private String key;

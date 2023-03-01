@@ -1,4 +1,4 @@
-package com.yaswanth.studentDS;
+package com.yaswanth.studentds;
 
 public class StudentDS {
     private String name;

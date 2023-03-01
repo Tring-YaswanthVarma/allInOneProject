@@ -1,4 +1,4 @@
-package com.yaswanth.simpleCalculator;
+package com.yaswanth.simplecalculator;
 
 public class Subtraction extends SimpleCalculator{
     public Subtraction(double num1, double num2){

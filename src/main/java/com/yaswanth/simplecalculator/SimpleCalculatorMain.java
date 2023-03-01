@@ -1,4 +1,4 @@
-package com.yaswanth.simpleCalculator;
+package com.yaswanth.simplecalculator;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

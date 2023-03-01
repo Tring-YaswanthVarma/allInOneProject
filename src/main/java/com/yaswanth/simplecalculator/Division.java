@@ -1,4 +1,4 @@
-package com.yaswanth.simpleCalculator;
+package com.yaswanth.simplecalculator;
 
 public class Division extends SimpleCalculator{
     public Division(double num1, double num2){
