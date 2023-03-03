@@ -74,8 +74,6 @@ public class ShapeMain {
     }
 
     public void shapeMain() {
-//        Logger logger = Logger.getLogger("com.api.jar");
-        final String ER = "Your input type is mismatched, try again.";
         String check;
         String type;
 
