@@ -9,77 +9,92 @@ import static com.yaswanth.shape.Shape.RECTANGLE;
 import static com.yaswanth.shape.Shape.TRIANGLE;
 
 public class ShapeMain {
+    private boolean checker;
+    private double triangleL2 = 0;
+    private double triangleL3 = 0;
+    private double triangleL1 = 0;
+    private double triangleHeight = 0;
+    private double triangleBase = 0;
+    private double rectLength = 0;
+    private double rectWidth = 0;
+    private double radius = 0;
+    Logger logger = Logger.getLogger("com.api.jar");
+    Scanner sc = new Scanner(System.in);
+    private final String ER = "Your input type is mismatched, try again.";
+    public void circleInput(){
+        checker = true;
+        while (checker){
+            try{
+                logger.info("Enter radius of the CIRCLE : ");
+                radius = sc.nextDouble();
+                checker = false;
+            }catch (InputMismatchException e){
+                logger.info(ER);
+                sc.nextLine();
+            }
+        }
+    }
+
+    public void rectangleInput(){
+        checker = true;
+        while (checker){
+            try{
+                logger.info("Enter length of the RECTANGLE : ");
+                rectLength = sc.nextDouble();
+                logger.info("Enter width of the RECTANGLE : ");
+                rectWidth = sc.nextDouble();
+                checker = false;
+            } catch (InputMismatchException e){
+                logger.info(ER);
+                sc.nextLine();
+            }
+        }
+    }
+
+    public void triangleInput(){
+        checker = true;
+        while(checker){
+            try{
+                logger.info("Enter 1st side of the triangle : ");
+                triangleL1 = sc.nextDouble();
+                logger.info("Enter 2nd side of the triangle : ");
+                triangleL2 = sc.nextDouble();
+                logger.info("Enter 3rd side of the triangle : ");
+                triangleL3 = sc.nextDouble();
+                logger.info("Enter height of the triangle : ");
+                triangleHeight = sc.nextDouble();
+                logger.info("Enter base of the triangle : ");
+                triangleBase = sc.nextDouble();
+                checker = false;
+            } catch (InputMismatchException e){
+                logger.info(ER);
+                sc.nextLine();
+            }
+        }
+    }
 
     public void shapeMain() {
-        Logger logger = Logger.getLogger("com.api.jar");
+//        Logger logger = Logger.getLogger("com.api.jar");
         final String ER = "Your input type is mismatched, try again.";
         String check;
         String type;
-        double triangleL1 = 0;
-        double triangleL2 = 0;
-        double triangleL3 = 0;
-        double triangleHeight = 0;
-        double triangleBase = 0;
-        double rectLength = 0;
-        double rectWidth = 0;
-        double radius = 0;
+
         Shape s = null;
-        Scanner sc = new Scanner(System.in);
+
         char choice = 'y';
 
         while (choice == 'y'){
-            boolean checker = true;
+
             logger.info("Enter Shape type (rectangle, circle, triangle): ");
             type = sc.next().toLowerCase();
             if (type.equals(CIRCLE)) {
-                while (checker){
-                    try{
-                        logger.info("Enter radius of the CIRCLE : ");
-                        radius = sc.nextDouble();
-                        checker = false;
-                    }catch (InputMismatchException e){
-                        logger.info(ER);
-                        sc.nextLine();
-                    }
-                }
+                circleInput();
                 s = new Shape(type, radius);
             } else if (type.equals(RECTANGLE)) {
-                checker = true;
-                while (checker){
-                    try{
-                        logger.info("Enter length of the RECTANGLE : ");
-                        rectLength = sc.nextDouble();
-                        logger.info("Enter width of the RECTANGLE : ");
-                        rectWidth = sc.nextDouble();
-                        checker = false;
-                    } catch (InputMismatchException e){
-                        logger.info(ER);
-                        sc.nextLine();
-                    }
-                }
+                rectangleInput();
                 s = new Shape(type, rectLength, rectWidth);
             } else if (type.equals(TRIANGLE)) {
-                checker = true;
-                while(checker){
-                    try{
-                        logger.info("Enter 1st side of the triangle : ");
-                        triangleL1 = sc.nextDouble();
-                        logger.info("Enter 2nd side of the triangle : ");
-                        triangleL2 = sc.nextDouble();
-                        logger.info("Enter 3rd side of the triangle : ");
-                        triangleL3 = sc.nextDouble();
-                        logger.info("Enter height of the triangle : ");
-                        triangleHeight = sc.nextDouble();
-                        logger.info("Enter base of the triangle : ");
-                        triangleBase = sc.nextDouble();
-                        checker = false;
-                    } catch (InputMismatchException e){
-                        logger.info(ER);
-                        sc.nextLine();
-                    }
-                }
-
-
+                triangleInput();
                 s = new Shape(type, triangleL1, triangleL2, triangleL3, triangleHeight,
                         triangleBase);
             } else {
