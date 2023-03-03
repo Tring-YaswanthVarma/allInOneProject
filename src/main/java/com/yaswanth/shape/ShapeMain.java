@@ -20,7 +20,7 @@ public class ShapeMain {
     private double radius = 0;
     Logger logger = Logger.getLogger("com.api.jar");
     Scanner sc = new Scanner(System.in);
-    private final String ER = "Your input type is mismatched, try again.";
+    private static final String ER = "Your input type is mismatched, try again.";
     public void circleInput(){
         checker = true;
         while (checker){
@@ -77,7 +77,7 @@ public class ShapeMain {
         String check;
         String type;
 
-        Shape s = null;
+        Shape s ;
 
         char choice = 'y';
 
